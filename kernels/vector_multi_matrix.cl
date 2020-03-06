@@ -18,8 +18,8 @@ __kernel void vector_multi_matrix(__global float* vector,
          sum += matrix[index];
          //printf("matrix[%d]=%f, ", index, matrix[index]);
       }
-      printf("\n");
-      //result[col_index] = vector[col_index] * sum;
+      //printf("\n");
+      result[col_index] = vector[col_index] * sum;
    }
    else
    {
